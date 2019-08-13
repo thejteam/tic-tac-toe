@@ -5,7 +5,7 @@
 void showBoard(char board[][3]){//Prints board and after each turn
 	int rows,columns;
 	for(rows=0;rows<3;rows++){
-		for(columns=0;columns<7;columns++){
+		for(columns=0;columns<3;columns++){
 			printf("%c",board[rows][columns]);
 		}
 		printf("\n");
@@ -18,7 +18,7 @@ int main(int argc, char *argv[]) {
 	char game[3][3];
   
 	for(rows=0;rows<3;rows++){ //initializes game array
-		for(columns=0;columns<7;columns+=2){
+		for(columns=0;columns<3;columns+=2){
 			game[rows][columns]=' ';
 		}
 	}
